@@ -460,3 +460,18 @@ html, body {
     bottom: 12px;
   }
 }
+
+/* Estilos para mejorar la generación de PDF */
+@media print {
+  body {
+    background: white;
+  }
+  .cv-container {
+    margin: 0;
+    box-shadow: none;
+    max-width: 100%;
+  }
+  .cv-fab {
+    display: none !important;
+  }
+}
