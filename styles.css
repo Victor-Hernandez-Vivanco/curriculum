@@ -4,6 +4,7 @@
 .cv-main {
   border-radius: 16px !important;
 }
+
 @media (max-width: 1400px) {
     .cv-container {
         max-width: 95vw;
@@ -73,6 +74,7 @@
         height: 40px;
     }
 }
+
 /* Botón flotante de descarga con texto */
 .cv-fab.cv-fab-btn {
   width: auto;
@@ -96,15 +98,19 @@
   bottom: 24px;
   position: fixed;
   z-index: 100;
+  text-decoration: none;
 }
+
 .cv-fab.cv-fab-btn:hover {
   background: #3a4c6e;
   box-shadow: 0 4px 16px #0003;
 }
+
 /* Espacio a la derecha para el párrafo de Acerca de Mi */
 .cv-section.cv-about p {
   padding-right: 50px;
 }
+
 /* Reset y fuentes */
 html, body {
   margin: 0;
@@ -114,6 +120,7 @@ html, body {
   background: #ffffff;
   color: #222;
 }
+
 .cv-container {
   display: flex;
   min-height: 80vh;
@@ -127,6 +134,7 @@ html, body {
   padding-left: 0;
   padding-right: 2vw;
 }
+
 .cv-sidebar {
   background: #e6eaf0;
   color: #3f4a58;
@@ -140,6 +148,7 @@ html, body {
   position: relative;
   overflow: hidden;
 }
+
 .cv-sidebar::before {
     content: "";
     position: absolute;
@@ -151,10 +160,12 @@ html, body {
     clip-path: polygon(0 0, 100% 0, 0 220px, 0 0);
     z-index: 0;
 }
+
 .cv-photo, .cv-name-block, .cv-section {
   position: relative;
   z-index: 1;
 }
+
 .cv-photo {
   width: 120px;
   height: 120px;
@@ -168,6 +179,7 @@ html, body {
   justify-content: center;
   overflow: hidden;
 }
+
 .cv-photo-img {
   width: 100%;
   height: 100%;
@@ -175,10 +187,12 @@ html, body {
   border-radius: 50%;
   display: block;
 }
+
 .cv-name-block {
   text-align: center;
   margin-bottom: 18px;
 }
+
 .cv-name-block h1 {
   font-size: 2.1rem;
   font-weight: 600;
@@ -186,12 +200,14 @@ html, body {
   line-height: 1.1;
   color: #608abf;
 }
+
 .cv-name-block h2 {
   font-size: 1.1rem;
   font-weight: 400;
   margin: 0;
   color: #608abf;
 }
+
 .cv-section p,
 .cv-timeline-desc,
 .cv-ref-contact {
@@ -212,6 +228,7 @@ html, body {
   gap: 8px;
   position: relative;
 }
+
 .cv-section h3::after {
   content: "";
   display: block;
@@ -224,11 +241,13 @@ html, body {
   background: #608abf;
   border-radius: 2px;
 }
+
 .cv-contact ul, .cv-skills ul {
   list-style: none;
   padding-left: 0;
   margin-left: 0;
 }
+
 .cv-contact li, .cv-skills li {
   font-size: 0.98rem;
   margin-bottom: 7px;
@@ -244,20 +263,25 @@ html, body {
   word-break: break-all;
   max-width: 100%;
 }
+
 .cv-contact li {
   line-height: 1.3;
 }
+
 .cv-about p {
   font-size: 0.97rem;
   color: #3f4a58;
 }
+
 .cv-skills ul {
   margin-top: 8px;
 }
+
 .cv-skills li {
   position: relative;
   padding-left: 0;
 }
+
 .cv-skills li:before {
   content: '\2022';
   color: #3f4a58;
@@ -268,6 +292,7 @@ html, body {
   font-size: 1.1em;
   top: 0;
 }
+
 .cv-main {
   flex: 1;
   padding: 36px 32px 32px 32px;
@@ -276,21 +301,26 @@ html, body {
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .cv-section.cv-education, .cv-section.cv-experience {
   margin-bottom: 24px;
 }
+
 .cv-section.cv-references {
   margin-top: 18px;
 }
+
 .cv-timeline {
   border-left: 2px solid #b7c7e2;
   margin-left: 10px;
   padding-left: 18px;
 }
+
 .cv-timeline-item {
   position: relative;
   margin-bottom: 22px;
 }
+
 .cv-timeline-dot {
   position: absolute;
   left: -26px;
@@ -302,35 +332,42 @@ html, body {
   border-radius: 50%;
   box-shadow: 0 1px 4px #0001;
 }
+
 .cv-timeline-content {
   margin-left: 0;
 }
+
 .cv-timeline-title {
   font-weight: 600;
   font-size: 1.05rem;
   color: #3a4c6e;
   margin-bottom: 2px;
 }
+
 .cv-timeline-institution {
   font-style: italic;
   font-weight: 600;
   color: #608abf;
 }
+
 .cv-timeline-date {
   font-size: 0.97rem;
   color: #6b95c9;
   font-weight: 500;
   margin-bottom: 2px;
 }
+
 .cv-timeline-desc {
   font-size: 0.97rem;
   color: #444;
 }
+
 .cv-references-list {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
 }
+
 .cv-reference {
   background: #f7f7f7;
   border-radius: 8px;
@@ -339,20 +376,24 @@ html, body {
   flex: 1 1 180px;
   box-shadow: 0 1px 4px #0001;
 }
+
 .cv-ref-name {
   font-weight: 600;
   color: #3a4c6e;
   margin-bottom: 2px;
 }
+
 .cv-ref-name span {
   font-weight: 400;
   color: #608abf;
   font-size: 0.98em;
 }
+
 .cv-ref-contact {
   font-size: 0.97rem;
   color: #444;
 }
+
 .cv-fab {
   position: fixed;
   right: 24px;
@@ -371,9 +412,11 @@ html, body {
   z-index: 100;
   transition: background 0.2s;
 }
+
 .cv-fab:hover {
   background: #3a4c6e;
 }
+
 /* Iconos simples */
 .icon {
   display: inline-block;
@@ -389,6 +432,7 @@ html, body {
     padding-right: 2vw;
   }
 }
+
 @media (max-width: 900px) {
   .cv-container {
     flex-direction: column;
@@ -411,6 +455,7 @@ html, body {
     padding: 24px 12px 18px 12px;
   }
 }
+
 @media (max-width: 700px) {
   .cv-container {
     flex-direction: column;
@@ -437,6 +482,7 @@ html, body {
     gap: 12px;
   }
 }
+
 @media (max-width: 500px) {
   .cv-photo {
     width: 80px;
@@ -458,64 +504,5 @@ html, body {
     font-size: 1.5rem;
     right: 12px;
     bottom: 12px;
-  }
-}
-
-/* Estilos para mejorar la generación de PDF */
-@media print {
-  body {
-    background: white !important;
-  }
-  
-  .cv-container {
-    margin: 0 !important;
-    box-shadow: none !important;
-    max-width: 100% !important;
-    border-radius: 0 !important;
-  }
-  
-  .cv-sidebar {
-    border-radius: 0 !important;
-  }
-  
-  .cv-main {
-    border-radius: 0 !important;
-  }
-  
-  .cv-fab, .cv-fab-btn {
-    display: none !important;
-  }
-  
-  /* Forzar colores y fondos */
-  * {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-    color-adjust: exact !important;
-  }
-  
-  .cv-sidebar {
-    background: #e6eaf0 !important;
-  }
-  
-  .cv-sidebar::before {
-    background: #608abf !important;
-  }
-  
-  .cv-photo {
-    border: 6px solid #fff !important;
-    background: #e0e6ef !important;
-  }
-  
-  .cv-timeline-dot {
-    background: #608abf !important;
-    border: 3px solid #fff !important;
-  }
-  
-  .cv-timeline {
-    border-left: 2px solid #b7c7e2 !important;
-  }
-  
-  .cv-section h3::after {
-    background: #608abf !important;
   }
 }

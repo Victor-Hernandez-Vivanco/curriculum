@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Víctor Hernández - CV</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
@@ -192,12 +191,6 @@
                 Duoc Uc<br /><span class="cv-timeline-institution">Ingeniería en Informática</span>
               </div>
               <div class="cv-timeline-date">2022 - 2025</div>
-              <!-- <div class="cv-timeline-desc">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  sit amet sem nec risus egestas accumsan. In enim nunc,
-                  tincidunt ut quam eget, luctus sollicitudin neque. Sed leo
-                  nisl, semper ac hendrerit a, sollicitudin in arcu.
-                </div> -->
             </div>
           </div>
           <div class="cv-timeline-item">
@@ -207,12 +200,6 @@
                 Cft Crownliet<br /><span class="cv-timeline-institution">Ventas Gestión Farmacéutica</span>
               </div>
               <div class="cv-timeline-date">2009 - 2010</div>
-              <!-- <div class="cv-timeline-desc">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  sit amet sem nec risus egestas accumsan. In enim nunc,
-                  tincidunt ut quam eget, luctus sollicitudin neque. Sed leo
-                  nisl, semper ac hendrerit a, sollicitudin in arcu.
-                </div> -->
             </div>
           </div>
         </div>
@@ -227,56 +214,16 @@
                 Análisis de Datos de Google<br /><span class="cv-timeline-institution">Curcera</span>
               </div>
               <div class="cv-timeline-date">2024 - 2025</div>
-              <!-- <div class="cv-timeline-desc">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  sit amet sem nec risus egestas accumsan. In enim nunc,
-                  tincidunt ut quam eget, luctus sollicitudin neque. Sed leo
-                  nisl, semper ac hendrerit a, sollicitudin in arcu.
-                </div> -->
             </div>
           </div>
         </div>
       </section>
     </main>
   </div>
-  <button onclick="descargarPDF()" class="cv-fab cv-fab-btn" title="Descargar PDF">Descargar</button>
-  <script>
-    function descargarPDF() {
-      const button = document.querySelector('.cv-fab-btn');
-      button.style.display = 'none';
-      
-      const element = document.querySelector('.cv-container');
-      const opt = {
-        margin: [8, 8, 8, 8],
-        filename: 'Victor_Hernandez_CV.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: {
-          scale: 4,
-          useCORS: true,
-          logging: false,
-          letterRendering: true,
-          allowTaint: true,
-          backgroundColor: '#ffffff',
-          windowWidth: 1100,
-          windowHeight: element.scrollHeight
-        },
-        jsPDF: {
-          unit: 'mm',
-          format: 'a4',
-          orientation: 'portrait',
-          compress: true
-        },
-        pagebreak: { 
-          mode: ['avoid-all', 'css', 'legacy'],
-          avoid: ['.cv-section', '.cv-timeline-item']
-        }
-      };
-      
-      html2pdf().set(opt).from(element).save().then(() => {
-        button.style.display = 'flex';
-      });
-    }
-  </script>
+  
+  <!-- Botón de descarga que apunta directamente al PDF -->
+  <a href="./asset/Víctor Hernández.pdf" download="Victor_Hernandez_CV.pdf" class="cv-fab cv-fab-btn" title="Descargar PDF">Descargar</a>
+
 </body>
 
 </html>
