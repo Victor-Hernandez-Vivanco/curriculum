@@ -464,14 +464,58 @@ html, body {
 /* Estilos para mejorar la generación de PDF */
 @media print {
   body {
-    background: white;
+    background: white !important;
   }
+  
   .cv-container {
-    margin: 0;
-    box-shadow: none;
-    max-width: 100%;
+    margin: 0 !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    border-radius: 0 !important;
   }
-  .cv-fab {
+  
+  .cv-sidebar {
+    border-radius: 0 !important;
+  }
+  
+  .cv-main {
+    border-radius: 0 !important;
+  }
+  
+  .cv-fab, .cv-fab-btn {
     display: none !important;
+  }
+  
+  /* Forzar colores y fondos */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+  
+  .cv-sidebar {
+    background: #e6eaf0 !important;
+  }
+  
+  .cv-sidebar::before {
+    background: #608abf !important;
+  }
+  
+  .cv-photo {
+    border: 6px solid #fff !important;
+    background: #e0e6ef !important;
+  }
+  
+  .cv-timeline-dot {
+    background: #608abf !important;
+    border: 3px solid #fff !important;
+  }
+  
+  .cv-timeline {
+    border-left: 2px solid #b7c7e2 !important;
+  }
+  
+  .cv-section h3::after {
+    background: #608abf !important;
   }
 }

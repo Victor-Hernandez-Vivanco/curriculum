@@ -242,17 +242,23 @@
   <button onclick="descargarPDF()" class="cv-fab cv-fab-btn" title="Descargar PDF">Descargar</button>
   <script>
     function descargarPDF() {
+      const button = document.querySelector('.cv-fab-btn');
+      button.style.display = 'none';
+      
       const element = document.querySelector('.cv-container');
       const opt = {
-        margin: [5, 5, 5, 5],
+        margin: [8, 8, 8, 8],
         filename: 'Victor_Hernandez_CV.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: {
-          scale: 3,
+          scale: 4,
           useCORS: true,
           logging: false,
           letterRendering: true,
-          allowTaint: true
+          allowTaint: true,
+          backgroundColor: '#ffffff',
+          windowWidth: 1100,
+          windowHeight: element.scrollHeight
         },
         jsPDF: {
           unit: 'mm',
@@ -260,9 +266,15 @@
           orientation: 'portrait',
           compress: true
         },
-        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+        pagebreak: { 
+          mode: ['avoid-all', 'css', 'legacy'],
+          avoid: ['.cv-section', '.cv-timeline-item']
+        }
       };
-      html2pdf().set(opt).from(element).save();
+      
+      html2pdf().set(opt).from(element).save().then(() => {
+        button.style.display = 'flex';
+      });
     }
   </script>
 </body>
